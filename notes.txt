@@ -1,0 +1,36 @@
+These notes are a simple way to documment the steps and process for future reference, in conjunction with the 
+github commit log. Both for bootstrap and fontawesome there are 2 main ways to setup the project: using a link 
+to their servers from where the needed files are retrieved, or hosting the needed files ourselves. We'll use 
+the latter, downloading the needed dependencies through npm. Webpack or Gulp are pages that automate some tasks
+and export our files for deployment. Sass will be the language that extends our CSS capabilities. Browsersync
+helps refresh our pages for view between edits.
+
+As a base we should have a text editor (VSCode in this case) and NPM installed in our PC. The VERY FIRST step
+is always the creation of our main package.json file through the use of "npm init" in the console. Alternatively
+we can use "npm init --yes" for a default starting package. The basic nodes to work in this tutorial can be all
+installed at once by using "npm install bootstrap font-awesome jquery popper.js". Using "npm install -D gulp gulp-cli gulp-sass browser-sync"
+will install the rest of the tools we'll use. (the -D variable just tells NPM that these will be dev dependencies).
+At that point we need to create a gulpfile.js file in our main folder. This file will be used to configure the tool,
+in JS. The way it is setup, entering "npm start" will execute most of the tutorial's commands, but due to changes
+in the way gulp 4.0 works, the browser-sync server doesn't work. (need testing, copied some random code and downloaded "npm install --save-dev sass")
+
+The current workaround was to use the modernized code found in the YT video and STRICTLY download "npm i sass@1.77.6 --save-exact",
+as newer versions have changed their syntax in a way that makes bootstrap fail. Browsersync still fails as it
+cannot currently load CSS or JS, but viewing the file in the traditional way does seem to work properly.
+
+After the instalations are finished we need to setup our gulp code to run in our package.json file and we need to start creating the folders. We start by adding '"start": "gulp"' to our package.json file. (we can change "start" to whatever we want our starting script to be). After that we are ready to create the "src" folder and its subfolders: "scss", "fonts" and "js". The files to fill these folders are in the template.
+
+Running "npm start" at this point will create the remaining CSS folder and fill it, demonstrating the fact that our setup is working. All we need at this point is to either create an index.html file inside the src folder or import one and attach the necessary css and js files to it. The needed code is:
+
+    <link rel="stylesheet" href="../src/css/bootstrap.css" />
+    <link rel="stylesheet" href="../src/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../src/css/main.css" />
+
+in head, and:
+
+    <script src="../src/js/jquery.min.js" charset="utf-8"></script>
+    <script src="../src/js/popper.min.js" charset="utf-8"></script>
+    <script src="../src/js/bootstrap.js" charset="utf-8"></script>
+    <script src="../src/js/bootstrap.min.js" charset="utf-8"></script>
+
+at the bottom of the body. 

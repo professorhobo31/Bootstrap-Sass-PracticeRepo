@@ -1,0 +1,39 @@
+{
+  "name": "practice1",
+  "version": "1.0.0",
+  "description": "First from-scratch practice with bootstrap instalation",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/professorhobo31/Bootstrap-Sass-PracticeRepo.git"
+  },
+  "keywords": [
+    "Bootstrap",
+    "Sass",
+    "Gulp",
+    "practice",
+    "demo"
+  ],
+  "author": "Maximiliano Daniel Giacomino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/professorhobo31/Bootstrap-Sass-PracticeRepo/issues"
+  },
+  "homepage": "https://github.com/professorhobo31/Bootstrap-Sass-PracticeRepo#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
+    "sass": "1.77.6"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0",
+    "gulp-sass": "^5.1.0"
+  }
+}
