@@ -10,13 +10,110 @@
   </head>
 
   <body>
-
-    <div class="container-md">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis repellendus minus necessitatibus iste illo doloribus alias quas iusto sunt, architecto ratione ex, veniam eum vitae exercitationem nesciunt ea numquam, tempore officiis voluptate magnam quaerat velit hic quam. Veritatis officiis fugit corporis quaerat magnam! Quisquam eos voluptatum sint hic ipsa neque, optio voluptatem vero consequatur voluptas inventore in, nihil rem animi, rerum veniam sequi impedit? Numquam qui sed incidunt cupiditate nam fugit maxime laboriosam cum esse, voluptatibus sunt pariatur asperiores error laborum id repellendus deserunt quibusdam repellat blanditiis provident sapiente ut ipsum! Maiores temporibus id quam labore omnis tenetur aliquam reprehenderit.</div>
+    <div class="container-md" id="loremIpsum">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis
+      repellendus minus necessitatibus iste illo doloribus alias quas iusto
+      sunt, architecto ratione ex, veniam eum vitae exercitationem nesciunt ea
+      numquam, tempore officiis voluptate magnam quaerat velit hic quam.
+      Veritatis officiis fugit corporis quaerat magnam! Quisquam eos voluptatum
+      sint hic ipsa neque, optio voluptatem vero consequatur voluptas inventore
+      in, nihil rem animi, rerum veniam sequi impedit? Numquam qui sed incidunt
+      cupiditate nam fugit maxime laboriosam cum esse, voluptatibus sunt
+      pariatur asperiores error laborum id repellendus deserunt quibusdam
+      repellat blanditiis provident sapiente ut ipsum! Maiores temporibus id
+      quam labore omnis tenetur aliquam reprehenderit.
+    </div>
 
     <!-- /////////////////////////////////////GRID PRACTICE//////////////////////////////////////////////// -->
 
+    <div class="container" id="practiceGrid">
+      <div class="row">
+        <div class="col"><div class="box">BOX STYLED</div></div>
+      </div>
+    </div>
+    <!-- notice how this grid fills the whole screen but the next one divides itself with some gaps-->
 
-    
+    <div class="container" id="practiceGrid2">
+      <div class="row">
+        <div class="col-3"><div class="box">COL-3</div></div>
+        <div class="col-auto"><div class="box">COL-AUTO</div></div>
+        <div class="col-6"><div class="box">COL-6</div></div>
+      </div>
+    </div>
+    <!-- we need only keep adding columns that they will be distributed properly along our container-->
+
+    <div class="container" id="practiceGrid3">
+      <div class="row">
+        <div class="col-2 offset-2"><div class="box">COL-4</div></div>
+        <div class="col-lg-4 col-8">
+          <div class="box">COL-4 LG / COL-8</div>
+        </div>
+      </div>
+      <!-- the col-lg class tells bootstrap to size the column to 4 in large and above screens, then size it to 8 on smaller devices. Offset skips a couple spaces prior -->
+    </div>
+
+    <div class="container" id="practiceGrid4">
+      <div class="row row-cols-2 row-cols-lg-4 gy-2">
+        <!-- row cols 2 sets our grid to keep 2 columns as we add more and more content. gy sets the gap in the y dimension. To change the horizontal gaps, we use g-3, g-4, etc-->
+        <div class="col">
+          <div class="box">CONTENTS</div>
+        </div>
+        <div class="col">
+          <div class="box">CONTENTS</div>
+        </div>
+        <div class="col">
+          <div class="box">CONTENTS</div>
+        </div>
+        <div class="col">
+          <div class="box">CONTENTS</div>
+        </div>
+        <div class="col">
+          <div class="box">CONTENTS</div>
+        </div>
+        <div class="col">
+          <div class="box">CONTENTS</div>
+        </div>
+        <div class="col">
+          <div class="box">CONTENTS</div>
+        </div>
+        <div class="col">
+          <div class="box">CONTENTS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- /////////////////////////////////////TABLE PRACTICE/////////////////////////////////////////////// -->
+
+    <div id="tableContainer" class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>First</th>
+            <th>Last</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kyle</td>
+            <td>Cook</td>
+            <td>32</td>
+          </tr>
+          <tr>
+            <td>Sarah</td>
+            <td>Parker</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>Johnes</td>
+            <td>87</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--Here we can see an example table. We can make our table have alternating colors with table-striped and
+    table-striped-columns-->
 
     <!-- /////////////////////////////////////BOOTSTRAP SCRIPS///////////////////////////////////////////// -->
     <script src="./src/js/jquery.min.js" charset="utf-8"></script>

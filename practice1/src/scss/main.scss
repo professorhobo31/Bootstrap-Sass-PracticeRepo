@@ -1,6 +1,15 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
- body {
-     background-color: $white;
-     color: $yellow;
- }
+body {
+  background-color: $white;
+  color: $black;
+}
+
+.box {
+  background-color: $blue-200;
+  border: 1px solid $blue;
+  min-height: 50px;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}

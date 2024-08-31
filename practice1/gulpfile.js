@@ -92,7 +92,7 @@ gulp.task('serve', gulp.series('sass', function(){
 
   
 
-   gulp.watch('src/*.html').on('change', browserSync.reload);
+   gulp.watch('./*.html').on('change', browserSync.reload);
 
   }));
 
@@ -124,4 +124,4 @@ gulp.task('fonts', () => {
 
 /* ejecucion */
 
-gulp.task('default', gulp.parallel('js', 'font-awesome', 'fonts', 'serve'))
+gulp.task('default', gulp.series('js', 'font-awesome', 'fonts', 'serve'))
