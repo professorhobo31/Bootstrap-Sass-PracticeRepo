@@ -14,7 +14,7 @@ gulp.task('sass', () => {
 
 
 
-    /* archivos que se vana a procesar */
+    /* archivos que se van a a procesar */
 
     return gulp.src([
 
@@ -32,7 +32,7 @@ gulp.task('sass', () => {
 
         /* donde se van a guardar lo procesado */
 
-        .pipe(gulp.dest('src/css'))
+        .pipe(gulp.dest('src/css'), { sourcemaps: '.' })
 
         /* lo va inyectar en el html con browserSync */
 
@@ -72,7 +72,9 @@ gulp.task('serve', gulp.series('sass', function(){
 
     browserSync.init({
 
-      server: './src'
+      server: {
+        baseDir: '.'
+    }
 
     });
 
