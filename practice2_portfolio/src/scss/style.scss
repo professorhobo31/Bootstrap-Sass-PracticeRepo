@@ -1,0 +1,7 @@
+@use "_custom.scss" as *;
+
+body {
+    background-color: $primary;
+    color: $secondary;
+    font-size: 2rem;
+}

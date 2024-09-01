@@ -54,7 +54,7 @@ in head, and:
     <script src="./src/js/bootstrap.js" charset="utf-8"></script>
     <script src="./src/js/bootstrap.min.js" charset="utf-8"></script>
 
-at the bottom of the body.
+at the bottom of the body. At this point of the setup we should be able to run "npm start"
 
 Additionally, and before starting the in-depth learning process with bootstrap, I have downloaded the "theming-kit.html" file. It shows where our index.html file should go and it shows the styling somewhat working already. It may pay off to reverse engineer the file and make changes as practice, at some point.
 
