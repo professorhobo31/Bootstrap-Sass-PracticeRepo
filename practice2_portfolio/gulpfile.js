@@ -32,7 +32,7 @@ gulp.task('sass', () => {
 
         /* donde se van a guardar lo procesado */
 
-        .pipe(gulp.dest('src/css'), { sourcemaps: '.' })
+        .pipe(gulp.dest('src/css'))
 
         /* lo va inyectar en el html con browserSync */
 
@@ -84,7 +84,11 @@ gulp.task('serve', gulp.series('sass', function(){
 
       'node_modules/bootstrap/scss/bootstrap.min.scss',
 
-      'src/scss/*.scss'
+      'src/scss/*.scss',
+
+      'src/scss/components/*.scss',
+
+      'src/scss/sections/*.scss'
 
       ], gulp.series('sass')
 

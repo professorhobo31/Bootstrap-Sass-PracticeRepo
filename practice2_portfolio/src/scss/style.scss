@@ -1,5 +1,11 @@
-@use "custom" as *;
+//IMPORT OUR CUSTOM FILE
+@use 'custom';
 
-body {
-    background-color: $primary;
-}
+//IMPORT THE COMPONENTS
+@use 'components/animations.scss';
+@use 'components/mixins';
+@use 'components/buttons';
+
+//IMPORT THE SECTIONS
+@use 'sections/navbar';
+
