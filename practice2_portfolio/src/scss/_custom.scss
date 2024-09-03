@@ -30,7 +30,7 @@ $black:    #000;
 
 // THEME COLORS
 
-$primary:       $purple;
+$primary:       $purple-dark;
 $secondary:     $pink;
 $success:       $green;
 $info:          $cyan;
@@ -39,4 +39,8 @@ $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-900;
 
+// ACCORDION EDITS
 
+$accordion-icon-color:                    $primary;
+$accordion-icon-active-color:             $secondary;
+$accordion-icon-width:                    1.875rem;
