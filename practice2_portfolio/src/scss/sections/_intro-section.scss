@@ -17,6 +17,10 @@
         position: absolute;
         top: 42.5%;
         left: 45%;
+        @include media-breakpoint-down(sm) {
+            left: 40%;
+        }
+        transform: translate(-50%, -50%);
       span {
         i {
           position: absolute;
@@ -41,6 +45,6 @@
     }
 
     &--border2 {
-        animation-delay: 1s;
+        animation-delay: 0.75s;
     }
 }

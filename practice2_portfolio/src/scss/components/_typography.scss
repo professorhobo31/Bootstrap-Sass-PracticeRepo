@@ -18,5 +18,9 @@
         color: $white;
         margin-top: 1.25rem;
         text-transform: none;
+        text-align: justify;
+        @include media-breakpoint-down(sm) {
+            font-size: 1rem;
+        }
     }
 }

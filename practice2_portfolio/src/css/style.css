@@ -11907,6 +11907,12 @@ textarea.form-control-lg {
   color: #fff;
   margin-top: 1.25rem;
   text-transform: none;
+  text-align: justify;
+}
+@media (max-width: 575.98px) {
+  .display-2--description {
+    font-size: 1rem;
+  }
 }
 
 .menu {
@@ -11935,6 +11941,12 @@ textarea.form-control-lg {
   position: absolute;
   top: 42.5%;
   left: 45%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 575.98px) {
+  .intros .video-box a {
+    left: 40%;
+  }
 }
 .intros .video-box a span i {
   position: absolute;
@@ -11954,5 +11966,5 @@ textarea.form-control-lg {
   animation-delay: 0.25s;
 }
 .border-animation--border2 {
-  animation-delay: 1s;
+  animation-delay: 0.75s;
 }
