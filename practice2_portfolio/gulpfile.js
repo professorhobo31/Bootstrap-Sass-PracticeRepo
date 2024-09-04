@@ -28,7 +28,7 @@ gulp.task('sass', () => {
 
         /* comprimir y convierte a  css el sass */
 
-        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(sass())
 
         /* donde se van a guardar lo procesado */
 
