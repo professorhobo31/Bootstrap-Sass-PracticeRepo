@@ -11886,10 +11886,14 @@ textarea.form-control-lg {
 .display-2--intro {
   display: inline-block;
   font-weight: 700;
+  color: #fff;
 }
 .display-2--description {
   display: block;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 1.25rem;
+  text-transform: none;
 }
 
 .menu {
@@ -11902,4 +11906,23 @@ textarea.form-control-lg {
   color: #fff !important;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+.intro-section {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.intros .video-box {
+  position: relative;
+}
+.intros .video-box a {
+  top: 1%;
+}
+.intros .video-box a span i {
+  position: absolute;
+  font-size: 6rem;
+  color: #d122e3;
 }
