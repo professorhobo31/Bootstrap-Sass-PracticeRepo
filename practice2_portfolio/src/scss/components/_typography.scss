@@ -26,3 +26,23 @@
         }
     }
 }
+
+//HEADING LINE
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;
+}
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    padding-top: 0.25rem;
+    height: 0.15rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;
+}
+//The above two properties add a simple doble line to the bottom of our text.
