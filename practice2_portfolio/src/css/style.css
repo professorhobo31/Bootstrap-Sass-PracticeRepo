@@ -11895,6 +11895,7 @@ textarea.form-control-lg {
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
 }
 .display-2--intro {
   display: inline-block;
@@ -11903,9 +11904,10 @@ textarea.form-control-lg {
 }
 .display-2--description {
   display: block;
-  font-size: 1.5rem;
   color: #fff;
+  font-size: 1.5rem;
   margin-top: 1.25rem;
+  font-weight: 200;
   text-transform: none;
   text-align: justify;
 }
@@ -11960,7 +11962,7 @@ textarea.form-control-lg {
   height: 6rem;
   border: solid 0.75rem #fff;
   border-radius: 50%;
-  animation: pulse-border 1s linear infinite;
+  animation: pulse-border 1.5s linear infinite;
 }
 .border-animation--border1 {
   animation-delay: 0.25s;
