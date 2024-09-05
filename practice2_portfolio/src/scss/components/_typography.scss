@@ -1,6 +1,9 @@
 @use "../custom" as *;
 @use "../components/mixins" as *;
 
+
+//DISPLAY 2
+//used mainly in the intro section. (Hey there, I'm Max!)
 .display-2 {
     margin-bottom: 1rem;
     text-transform: capitalize;
@@ -46,3 +49,17 @@
     margin: 0 auto;
 }
 //The above two properties add a simple doble line to the bottom of our text.
+
+//DISPLAY 3
+.display-3 {
+    font-family: "Poppins", sans-serif;
+    
+}
+
+//BORDER RIGHT
+//adds a gray line at the right of the class content
+.border-right {
+    border-right: solid 0.1rem $gray-400;
+    height: 100%;
+
+}
