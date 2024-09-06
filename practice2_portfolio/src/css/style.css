@@ -12027,3 +12027,10 @@ textarea.form-control-lg {
     order: 1;
   }
 }
+
+.testimonials {
+  position: relative;
+  padding: 0;
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  color: #fff;
+}
