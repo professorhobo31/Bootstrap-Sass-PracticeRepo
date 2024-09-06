@@ -12002,5 +12002,28 @@ textarea.form-control-lg {
 .services__content .icon {
   font-size: 2.5rem;
   color: #9926f0;
-  margin-top: 8rem;
+  padding-top: 9rem;
+}
+@media (max-width: 767.98px) {
+  .services__content .icon {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #service-section-container .row {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #middle-left {
+    order: 2;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #middle-right {
+    order: 1;
+  }
 }
